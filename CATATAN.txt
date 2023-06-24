@@ -1,0 +1,27 @@
+- laravel 9
+- composer require laravel/breeze --dev
+- php artisan breeze:install api
+- https://github.com/laravel/breeze-next
+- git clone https://github.com/laravel/breeze-next (in your path project with gitbash)
+- in nextjs => npm install
+- in nextjs => copy file .env.example -> .env.local
+- cara membuat resource php artisan make:resource UserResource *sesuaikan dengan model
+- cara jalankan project
+    php artisan serve
+    npm run dev
+- npm install --save-dev nodemon
+- npm install formik --save *nextjs
+- npm install yup *nextjs
+- jika ingin merubah auth, kita perlu ubah backend dan front end
+    dibagian backend
+        controller/auth
+        controller/request *jika login nya bukan pakai email maka perlu diubah
+        config/auth
+        databasenya
+    dibagian frontend
+        hooks/auth
+        pages/login
+        pages/register
+- seharusnya controller kita masukan ke http/controllers/api/BookController
+- php artisan storage:link
+- npm install --save react-toastify
